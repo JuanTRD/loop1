@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Guess Number</title>
+</head>
+<body>
+<button onclick="guess()">Play</button>
+<script>
+    function guess() {
+        let a = +prompt("Nhập khoảng số muốn đoán: ");
+        let number = Math.floor(Math.random() * a);
+        console.log(number);
+        let b = +prompt("Nhập số muốn đoán: ");
+        let count = 0;
+        while (number != b) {
+            if (b > number) {
+                alert("Số đúng nhỏ hơn");
+                b = +prompt("Nhập số muốn đoán: ");
+            } else {
+                alert("Số đúng lớn hơn");
+                b = +prompt("Nhập số muốn đoán: ");
+            }
+            count++;
+            if (count == 3) {
+                alert("Bạn đã quá số lần đoán. Thua cuộc!");
+                break;
+            }
+        }
+        if (number == b) {
+            alert("Bạn đã đoán đúng!");
+        }
+
+    }
+</script>
+</body>
+</html>
