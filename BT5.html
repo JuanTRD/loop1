@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>BT5</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c = 0;
+    let sum = 0;
+    for (let d=1; d<=20; d++) {
+        c = b;
+        b = a+b;
+        a = c;
+        sum +=b;
+    }
+    document.write('tong 20 so dau Fibonacci la ' + sum);
+
+</script>
+</body>
+</html>

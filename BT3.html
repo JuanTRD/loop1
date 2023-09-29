@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Fibonacci</title>
+</head>
+<body>
+<script>
+    let a = 0;
+    let b = 1;
+    let c = 0;
+    for (let d=1; d<=20; d++) {
+        c = b;
+        b = a+b;
+        a = c;
+        document.write(b + '<br>');
+    }
+
+</script>
+</body>
+</html>

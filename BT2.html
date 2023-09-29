@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Nhiet do</title>
+</head>
+<body>
+<script>
+    let ND = +prompt("Enter temperature");
+    while (ND != -1) {
+        ND = +prompt("Enter temperature");
+        while (ND <= 100 && ND >= 20) {
+            ND = +prompt("Enter temperature");
+        }
+        if (ND > 100) {
+            alert("Giam nhiet do");
+        } else if (ND < 20 && ND >= 0) {
+            alert("Tang do nhiet");
+        }
+    }
+    document.write("Da hoan thanh");
+</script>
+</body>
+</html>
